@@ -1,0 +1,26 @@
+[2014-03-07 08:58:24,001][INFO ][node                     ] [Electric Eve] version[0.90.10], pid[1316], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-07 08:58:24,017][INFO ][node                     ] [Electric Eve] initializing ...
+[2014-03-07 08:58:24,017][INFO ][plugins                  ] [Electric Eve] loaded [], sites []
+[2014-03-07 08:58:26,044][INFO ][node                     ] [Electric Eve] initialized
+[2014-03-07 08:58:26,045][INFO ][node                     ] [Electric Eve] starting ...
+[2014-03-07 08:58:26,174][INFO ][transport                ] [Electric Eve] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-07 08:58:29,308][INFO ][cluster.service          ] [Electric Eve] new_master [Electric Eve][UaSwyCgOTwi4j1Ss60kFqQ][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-07 08:58:29,323][INFO ][discovery                ] [Electric Eve] elasticsearch/UaSwyCgOTwi4j1Ss60kFqQ
+[2014-03-07 08:58:29,385][INFO ][http                     ] [Electric Eve] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-07 08:58:29,385][INFO ][node                     ] [Electric Eve] started
+[2014-03-07 08:58:29,766][INFO ][gateway                  ] [Electric Eve] recovered [2] indices into cluster_state
+[2014-03-07 09:36:51,847][INFO ][node                     ] [Electric Eve] stopping ...
+[2014-03-07 09:36:51,894][INFO ][node                     ] [Electric Eve] stopped
+[2014-03-07 09:36:51,894][INFO ][node                     ] [Electric Eve] closing ...
+[2014-03-07 09:36:51,894][INFO ][node                     ] [Electric Eve] closed
+[2014-03-07 09:37:29,131][INFO ][node                     ] [Spectra] version[0.90.10], pid[1936], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-07 09:37:29,131][INFO ][node                     ] [Spectra] initializing ...
+[2014-03-07 09:37:29,146][INFO ][plugins                  ] [Spectra] loaded [], sites []
+[2014-03-07 09:37:31,293][INFO ][node                     ] [Spectra] initialized
+[2014-03-07 09:37:31,293][INFO ][node                     ] [Spectra] starting ...
+[2014-03-07 09:37:31,422][INFO ][transport                ] [Spectra] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-07 09:37:34,559][INFO ][cluster.service          ] [Spectra] new_master [Spectra][ueC_5a3eRCW45Dj_wH7UWw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-07 09:37:34,590][INFO ][discovery                ] [Spectra] elasticsearch/ueC_5a3eRCW45Dj_wH7UWw
+[2014-03-07 09:37:34,656][INFO ][http                     ] [Spectra] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-07 09:37:34,656][INFO ][node                     ] [Spectra] started
+[2014-03-07 09:37:35,031][INFO ][gateway                  ] [Spectra] recovered [2] indices into cluster_state

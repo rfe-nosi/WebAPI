@@ -1,0 +1,15 @@
+[2014-05-05 13:17:13,525][INFO ][node                     ] [Mentallo] stopping ...
+[2014-05-05 13:17:13,639][INFO ][node                     ] [Mentallo] stopped
+[2014-05-05 13:17:13,640][INFO ][node                     ] [Mentallo] closing ...
+[2014-05-05 13:17:13,652][INFO ][node                     ] [Mentallo] closed
+[2014-05-05 13:19:02,654][INFO ][node                     ] [Ghost Rider 2099] version[0.90.10], pid[1556], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-05 13:19:02,669][INFO ][node                     ] [Ghost Rider 2099] initializing ...
+[2014-05-05 13:19:02,669][INFO ][plugins                  ] [Ghost Rider 2099] loaded [], sites []
+[2014-05-05 13:19:04,718][INFO ][node                     ] [Ghost Rider 2099] initialized
+[2014-05-05 13:19:04,718][INFO ][node                     ] [Ghost Rider 2099] starting ...
+[2014-05-05 13:19:04,868][INFO ][transport                ] [Ghost Rider 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-05 13:19:08,026][INFO ][cluster.service          ] [Ghost Rider 2099] new_master [Ghost Rider 2099][mX-bOJt-R6C-F6SMjGPOBg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-05 13:19:08,041][INFO ][discovery                ] [Ghost Rider 2099] elasticsearch/mX-bOJt-R6C-F6SMjGPOBg
+[2014-05-05 13:19:08,119][INFO ][http                     ] [Ghost Rider 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-05-05 13:19:08,119][INFO ][node                     ] [Ghost Rider 2099] started
+[2014-05-05 13:19:08,513][INFO ][gateway                  ] [Ghost Rider 2099] recovered [4] indices into cluster_state

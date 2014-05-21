@@ -1,0 +1,11 @@
+[2014-04-22 19:17:52,032][INFO ][node                     ] [Blitziana] version[0.90.10], pid[1468], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-22 19:17:52,032][INFO ][node                     ] [Blitziana] initializing ...
+[2014-04-22 19:17:52,032][INFO ][plugins                  ] [Blitziana] loaded [], sites []
+[2014-04-22 19:17:55,105][INFO ][node                     ] [Blitziana] initialized
+[2014-04-22 19:17:55,105][INFO ][node                     ] [Blitziana] starting ...
+[2014-04-22 19:17:55,326][INFO ][transport                ] [Blitziana] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-22 19:17:58,562][INFO ][cluster.service          ] [Blitziana] new_master [Blitziana][GjF2ZUTqSR-SulOIUxSZ1Q][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-22 19:17:58,589][INFO ][discovery                ] [Blitziana] elasticsearch/GjF2ZUTqSR-SulOIUxSZ1Q
+[2014-04-22 19:17:58,698][INFO ][http                     ] [Blitziana] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-22 19:17:58,698][INFO ][node                     ] [Blitziana] started
+[2014-04-22 19:17:59,219][INFO ][gateway                  ] [Blitziana] recovered [3] indices into cluster_state

@@ -1,0 +1,11 @@
+[2014-04-26 16:34:34,901][INFO ][node                     ] [Kragoff, Ivan] version[0.90.10], pid[1512], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-26 16:34:34,901][INFO ][node                     ] [Kragoff, Ivan] initializing ...
+[2014-04-26 16:34:34,917][INFO ][plugins                  ] [Kragoff, Ivan] loaded [], sites []
+[2014-04-26 16:34:37,951][INFO ][node                     ] [Kragoff, Ivan] initialized
+[2014-04-26 16:34:37,951][INFO ][node                     ] [Kragoff, Ivan] starting ...
+[2014-04-26 16:34:38,170][INFO ][transport                ] [Kragoff, Ivan] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-26 16:34:41,438][INFO ][cluster.service          ] [Kragoff, Ivan] new_master [Kragoff, Ivan][lfW8O4S5RVW6TgX6oUbF1g][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-26 16:34:41,470][INFO ][discovery                ] [Kragoff, Ivan] elasticsearch/lfW8O4S5RVW6TgX6oUbF1g
+[2014-04-26 16:34:41,599][INFO ][http                     ] [Kragoff, Ivan] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-26 16:34:41,599][INFO ][node                     ] [Kragoff, Ivan] started
+[2014-04-26 16:34:42,152][INFO ][gateway                  ] [Kragoff, Ivan] recovered [4] indices into cluster_state

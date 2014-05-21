@@ -1,0 +1,8 @@
+[2014-02-26 21:12:56] [info]  [ 4796] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2014-02-26 21:12:56] [info]  [ 4796] Service elasticsearch-service-x64 name Elasticsearch 0.90.10 (elasticsearch-service-x64)
+[2014-02-26 21:12:56] [info]  [ 4796] Service 'elasticsearch-service-x64' installed
+[2014-02-26 21:12:56] [info]  [ 4796] Commons Daemon procrun finished
+[2014-02-26 21:13:12] [info]  [ 1036] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2014-02-26 21:13:12] [info]  [ 1036] Running 'elasticsearch-service-x64' Service...
+[2014-02-26 21:13:12] [info]  [ 7444] Starting service...
+[2014-02-26 21:13:13] [info]  [ 7444] Service started in 1156 ms.

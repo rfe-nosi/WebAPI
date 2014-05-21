@@ -1,0 +1,26 @@
+[2014-03-09 20:07:00,482][INFO ][node                     ] [Jumbo Carnation] version[0.90.10], pid[1748], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-09 20:07:00,482][INFO ][node                     ] [Jumbo Carnation] initializing ...
+[2014-03-09 20:07:00,498][INFO ][plugins                  ] [Jumbo Carnation] loaded [], sites []
+[2014-03-09 20:07:02,517][INFO ][node                     ] [Jumbo Carnation] initialized
+[2014-03-09 20:07:02,517][INFO ][node                     ] [Jumbo Carnation] starting ...
+[2014-03-09 20:07:02,657][INFO ][transport                ] [Jumbo Carnation] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-09 20:07:05,791][INFO ][cluster.service          ] [Jumbo Carnation] new_master [Jumbo Carnation][IjNghpspSKKbKkIZ3Kt5mw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-09 20:07:05,822][INFO ][discovery                ] [Jumbo Carnation] elasticsearch/IjNghpspSKKbKkIZ3Kt5mw
+[2014-03-09 20:07:05,885][INFO ][http                     ] [Jumbo Carnation] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-09 20:07:05,885][INFO ][node                     ] [Jumbo Carnation] started
+[2014-03-09 20:07:06,245][INFO ][gateway                  ] [Jumbo Carnation] recovered [2] indices into cluster_state
+[2014-03-09 21:40:48,787][INFO ][node                     ] [Jumbo Carnation] stopping ...
+[2014-03-09 21:40:48,834][INFO ][node                     ] [Jumbo Carnation] stopped
+[2014-03-09 21:40:48,834][INFO ][node                     ] [Jumbo Carnation] closing ...
+[2014-03-09 21:40:48,834][INFO ][node                     ] [Jumbo Carnation] closed
+[2014-03-09 21:42:19,282][INFO ][node                     ] [Rigellian Recorder] version[0.90.10], pid[1580], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-09 21:42:19,298][INFO ][node                     ] [Rigellian Recorder] initializing ...
+[2014-03-09 21:42:19,298][INFO ][plugins                  ] [Rigellian Recorder] loaded [], sites []
+[2014-03-09 21:42:22,216][INFO ][node                     ] [Rigellian Recorder] initialized
+[2014-03-09 21:42:22,216][INFO ][node                     ] [Rigellian Recorder] starting ...
+[2014-03-09 21:42:22,464][INFO ][transport                ] [Rigellian Recorder] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-03-09 21:42:25,716][INFO ][cluster.service          ] [Rigellian Recorder] new_master [Rigellian Recorder][Cy5cOdExQmOmWgVKSCvV8Q][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-09 21:42:25,747][INFO ][discovery                ] [Rigellian Recorder] elasticsearch/Cy5cOdExQmOmWgVKSCvV8Q
+[2014-03-09 21:42:25,858][INFO ][http                     ] [Rigellian Recorder] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-09 21:42:25,858][INFO ][node                     ] [Rigellian Recorder] started
+[2014-03-09 21:42:26,358][INFO ][gateway                  ] [Rigellian Recorder] recovered [2] indices into cluster_state

@@ -1,0 +1,37 @@
+[2014-05-15 07:12:58,387][INFO ][node                     ] [Book] version[0.90.10], pid[1536], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-15 07:12:58,387][INFO ][node                     ] [Book] initializing ...
+[2014-05-15 07:12:58,403][INFO ][plugins                  ] [Book] loaded [], sites []
+[2014-05-15 07:13:01,456][INFO ][node                     ] [Book] initialized
+[2014-05-15 07:13:01,456][INFO ][node                     ] [Book] starting ...
+[2014-05-15 07:13:01,694][INFO ][transport                ] [Book] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-15 07:13:04,935][INFO ][cluster.service          ] [Book] new_master [Book][EhyRqMKuSKC0UzMBd2aIBg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-15 07:13:04,966][INFO ][discovery                ] [Book] elasticsearch/EhyRqMKuSKC0UzMBd2aIBg
+[2014-05-15 07:13:05,110][INFO ][http                     ] [Book] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-05-15 07:13:05,110][INFO ][node                     ] [Book] started
+[2014-05-15 07:13:05,626][INFO ][gateway                  ] [Book] recovered [4] indices into cluster_state
+[2014-05-15 08:13:08,593][INFO ][node                     ] [Dominus] version[0.90.10], pid[1276], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-15 08:13:08,593][INFO ][node                     ] [Dominus] initializing ...
+[2014-05-15 08:13:08,593][INFO ][plugins                  ] [Dominus] loaded [], sites []
+[2014-05-15 08:13:10,685][INFO ][node                     ] [Dominus] initialized
+[2014-05-15 08:13:10,685][INFO ][node                     ] [Dominus] starting ...
+[2014-05-15 08:13:10,825][INFO ][transport                ] [Dominus] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.23.0.141:9300]}
+[2014-05-15 08:13:14,022][INFO ][cluster.service          ] [Dominus] new_master [Dominus][Rzel6VRBRSOb3y-snTf4GQ][inet[/10.23.0.141:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-15 08:13:14,038][INFO ][discovery                ] [Dominus] elasticsearch/Rzel6VRBRSOb3y-snTf4GQ
+[2014-05-15 08:13:14,116][INFO ][http                     ] [Dominus] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.23.0.141:9200]}
+[2014-05-15 08:13:14,116][INFO ][node                     ] [Dominus] started
+[2014-05-15 08:13:14,530][INFO ][gateway                  ] [Dominus] recovered [4] indices into cluster_state
+[2014-05-15 09:29:15,097][INFO ][node                     ] [Dominus] stopping ...
+[2014-05-15 09:29:15,175][INFO ][node                     ] [Dominus] stopped
+[2014-05-15 09:29:15,175][INFO ][node                     ] [Dominus] closing ...
+[2014-05-15 09:29:15,191][INFO ][node                     ] [Dominus] closed
+[2014-05-15 09:29:49,815][INFO ][node                     ] [Alhazred, Abdul] version[0.90.10], pid[1388], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-15 09:29:49,815][INFO ][node                     ] [Alhazred, Abdul] initializing ...
+[2014-05-15 09:29:49,831][INFO ][plugins                  ] [Alhazred, Abdul] loaded [], sites []
+[2014-05-15 09:29:52,061][INFO ][node                     ] [Alhazred, Abdul] initialized
+[2014-05-15 09:29:52,061][INFO ][node                     ] [Alhazred, Abdul] starting ...
+[2014-05-15 09:29:52,202][INFO ][transport                ] [Alhazred, Abdul] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-15 09:29:55,386][INFO ][cluster.service          ] [Alhazred, Abdul] new_master [Alhazred, Abdul][YiyE7F8AT6CgFqtWs9i_zw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-15 09:29:55,402][INFO ][discovery                ] [Alhazred, Abdul] elasticsearch/YiyE7F8AT6CgFqtWs9i_zw
+[2014-05-15 09:29:55,488][INFO ][http                     ] [Alhazred, Abdul] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-05-15 09:29:55,489][INFO ][node                     ] [Alhazred, Abdul] started
+[2014-05-15 09:30:54,875][INFO ][gateway                  ] [Alhazred, Abdul] recovered [4] indices into cluster_state

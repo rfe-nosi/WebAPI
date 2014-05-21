@@ -1,0 +1,71 @@
+[2014-03-15 07:55:55,588][WARN ][cluster.service          ] [Rock] failed to reconnect to node [Rock][OysgMOuORzyNO3aMkrJNeg][inet[/10.23.1.108:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Rock][inet[/10.23.1.108:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:711)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:640)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:507)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.23.1.108:9300
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-03-15 07:59:03,548][WARN ][cluster.service          ] [Rock] failed to reconnect to node [Rock][OysgMOuORzyNO3aMkrJNeg][inet[/10.23.1.108:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Rock][inet[/10.23.1.108:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:711)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:640)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:507)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection timed out: no further information: /10.23.1.108:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-03-15 08:02:09,742][WARN ][cluster.service          ] [Rock] failed to reconnect to node [Rock][OysgMOuORzyNO3aMkrJNeg][inet[/10.23.1.108:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Rock][inet[/10.23.1.108:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:711)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:640)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:507)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.ConnectException: Connection timed out: no further information: /10.23.1.108:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-03-15 13:55:13,619][INFO ][node                     ] [Sleepwalker] version[0.90.10], pid[1400], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-15 13:55:13,619][INFO ][node                     ] [Sleepwalker] initializing ...
+[2014-03-15 13:55:13,635][INFO ][plugins                  ] [Sleepwalker] loaded [], sites []
+[2014-03-15 13:55:16,455][INFO ][node                     ] [Sleepwalker] initialized
+[2014-03-15 13:55:16,455][INFO ][node                     ] [Sleepwalker] starting ...
+[2014-03-15 13:55:16,674][INFO ][transport                ] [Sleepwalker] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-03-15 13:55:19,916][INFO ][cluster.service          ] [Sleepwalker] new_master [Sleepwalker][q4IsndeORWqAiPMM6lZCeg][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-15 13:55:19,933][INFO ][discovery                ] [Sleepwalker] elasticsearch/q4IsndeORWqAiPMM6lZCeg
+[2014-03-15 13:55:20,059][INFO ][http                     ] [Sleepwalker] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-15 13:55:20,060][INFO ][node                     ] [Sleepwalker] started
+[2014-03-15 13:55:20,543][INFO ][gateway                  ] [Sleepwalker] recovered [2] indices into cluster_state

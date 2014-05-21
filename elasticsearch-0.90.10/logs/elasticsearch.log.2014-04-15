@@ -1,0 +1,153 @@
+[2014-04-15 06:58:53,033][INFO ][node                     ] [Nighthawk] version[0.90.10], pid[1416], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-15 06:58:53,033][INFO ][node                     ] [Nighthawk] initializing ...
+[2014-04-15 06:58:53,033][INFO ][plugins                  ] [Nighthawk] loaded [], sites []
+[2014-04-15 06:58:55,881][INFO ][node                     ] [Nighthawk] initialized
+[2014-04-15 06:58:55,881][INFO ][node                     ] [Nighthawk] starting ...
+[2014-04-15 06:58:56,106][INFO ][transport                ] [Nighthawk] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-15 06:58:59,330][INFO ][cluster.service          ] [Nighthawk] new_master [Nighthawk][QCNOa1kAR5SJrkJR4_Q8tg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-15 06:58:59,353][INFO ][discovery                ] [Nighthawk] elasticsearch/QCNOa1kAR5SJrkJR4_Q8tg
+[2014-04-15 06:58:59,519][INFO ][http                     ] [Nighthawk] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-15 06:58:59,519][INFO ][node                     ] [Nighthawk] started
+[2014-04-15 06:58:59,907][INFO ][gateway                  ] [Nighthawk] recovered [1] indices into cluster_state
+[2014-04-15 07:58:50,562][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0xd0dd791f]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 14:03:12,776][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0xf5044ae5]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 14:03:12,872][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0x63e39cb1]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 14:28:15,766][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0xebf86ff6]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 14:28:15,766][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0xb8b157ce]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 14:28:15,766][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0x03f4671b]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 17:19:40,931][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0x78acd017]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 19:16:23,190][WARN ][transport.netty          ] [Nighthawk] exception caught on transport layer [[id: 0xf13893de]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-15 21:46:45,539][INFO ][node                     ] [Nighthawk] stopping ...
+[2014-04-15 21:46:45,570][INFO ][node                     ] [Nighthawk] stopped
+[2014-04-15 21:46:45,586][INFO ][node                     ] [Nighthawk] closing ...
+[2014-04-15 21:46:45,586][INFO ][node                     ] [Nighthawk] closed
+[2014-04-15 21:47:19,337][INFO ][node                     ] [Graviton] version[0.90.10], pid[1396], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-15 21:47:19,353][INFO ][node                     ] [Graviton] initializing ...
+[2014-04-15 21:47:19,353][INFO ][plugins                  ] [Graviton] loaded [], sites []
+[2014-04-15 21:47:21,340][INFO ][node                     ] [Graviton] initialized
+[2014-04-15 21:47:21,340][INFO ][node                     ] [Graviton] starting ...
+[2014-04-15 21:47:21,497][INFO ][transport                ] [Graviton] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-15 21:47:24,665][INFO ][cluster.service          ] [Graviton] new_master [Graviton][zgbl48FJQg-IIgmrNI9FmQ][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-15 21:47:24,688][INFO ][discovery                ] [Graviton] elasticsearch/zgbl48FJQg-IIgmrNI9FmQ
+[2014-04-15 21:47:24,762][INFO ][http                     ] [Graviton] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-15 21:47:24,762][INFO ][node                     ] [Graviton] started
+[2014-04-15 21:47:25,073][INFO ][gateway                  ] [Graviton] recovered [1] indices into cluster_state
+[2014-04-15 23:44:39,418][INFO ][node                     ] [Graviton] stopping ...
+[2014-04-15 23:44:39,464][INFO ][node                     ] [Graviton] stopped
+[2014-04-15 23:44:39,464][INFO ][node                     ] [Graviton] closing ...
+[2014-04-15 23:44:39,464][INFO ][node                     ] [Graviton] closed
+[2014-04-15 23:45:16,795][INFO ][node                     ] [Black Bolt] version[0.90.10], pid[1376], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-15 23:45:16,795][INFO ][node                     ] [Black Bolt] initializing ...
+[2014-04-15 23:45:16,795][INFO ][plugins                  ] [Black Bolt] loaded [], sites []
+[2014-04-15 23:45:19,730][INFO ][node                     ] [Black Bolt] initialized
+[2014-04-15 23:45:19,730][INFO ][node                     ] [Black Bolt] starting ...
+[2014-04-15 23:45:19,948][INFO ][transport                ] [Black Bolt] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-15 23:45:23,191][INFO ][cluster.service          ] [Black Bolt] new_master [Black Bolt][4KjBJKZxQdKC6-iXO_K58Q][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-15 23:45:23,209][INFO ][discovery                ] [Black Bolt] elasticsearch/4KjBJKZxQdKC6-iXO_K58Q
+[2014-04-15 23:45:23,329][INFO ][http                     ] [Black Bolt] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-15 23:45:23,329][INFO ][node                     ] [Black Bolt] started
+[2014-04-15 23:45:23,774][INFO ][gateway                  ] [Black Bolt] recovered [1] indices into cluster_state

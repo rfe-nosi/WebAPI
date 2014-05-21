@@ -1,0 +1,11 @@
+[2014-03-02 17:21:05,513][INFO ][node                     ] [Armor] version[0.90.10], pid[1352], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-02 17:21:05,529][INFO ][node                     ] [Armor] initializing ...
+[2014-03-02 17:21:05,529][INFO ][plugins                  ] [Armor] loaded [], sites []
+[2014-03-02 17:21:08,383][INFO ][node                     ] [Armor] initialized
+[2014-03-02 17:21:08,383][INFO ][node                     ] [Armor] starting ...
+[2014-03-02 17:21:08,593][INFO ][transport                ] [Armor] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-03-02 17:21:11,763][INFO ][cluster.service          ] [Armor] new_master [Armor][IN9rpHuJSXCxQ-D0NSg01Q][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-02 17:21:11,795][INFO ][discovery                ] [Armor] elasticsearch/IN9rpHuJSXCxQ-D0NSg01Q
+[2014-03-02 17:21:11,899][INFO ][http                     ] [Armor] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-02 17:21:11,899][INFO ][node                     ] [Armor] started
+[2014-03-02 17:21:12,443][INFO ][gateway                  ] [Armor] recovered [2] indices into cluster_state

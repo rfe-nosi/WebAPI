@@ -1,0 +1,11 @@
+[2014-03-17 08:00:04,503][INFO ][node                     ] [Svarog] version[0.90.10], pid[1556], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-17 08:00:04,519][INFO ][node                     ] [Svarog] initializing ...
+[2014-03-17 08:00:04,519][INFO ][plugins                  ] [Svarog] loaded [], sites []
+[2014-03-17 08:00:06,655][INFO ][node                     ] [Svarog] initialized
+[2014-03-17 08:00:06,655][INFO ][node                     ] [Svarog] starting ...
+[2014-03-17 08:00:06,811][INFO ][transport                ] [Svarog] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-17 08:00:09,986][INFO ][cluster.service          ] [Svarog] new_master [Svarog][dzsRyah0TsOyrEqEmSpl3Q][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-17 08:00:10,017][INFO ][discovery                ] [Svarog] elasticsearch/dzsRyah0TsOyrEqEmSpl3Q
+[2014-03-17 08:00:10,101][INFO ][http                     ] [Svarog] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-03-17 08:00:10,102][INFO ][node                     ] [Svarog] started
+[2014-03-17 08:00:10,438][INFO ][gateway                  ] [Svarog] recovered [2] indices into cluster_state

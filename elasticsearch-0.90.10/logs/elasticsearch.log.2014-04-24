@@ -1,0 +1,68 @@
+[2014-04-24 07:30:22,390][INFO ][node                     ] [Libra] version[0.90.10], pid[1524], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-24 07:30:22,390][INFO ][node                     ] [Libra] initializing ...
+[2014-04-24 07:30:22,405][INFO ][plugins                  ] [Libra] loaded [], sites []
+[2014-04-24 07:30:25,215][INFO ][node                     ] [Libra] initialized
+[2014-04-24 07:30:25,215][INFO ][node                     ] [Libra] starting ...
+[2014-04-24 07:30:25,433][INFO ][transport                ] [Libra] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-24 07:30:28,686][INFO ][cluster.service          ] [Libra] new_master [Libra][IFTtBw-XSQes7TpjLMtnDw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-24 07:30:28,712][INFO ][discovery                ] [Libra] elasticsearch/IFTtBw-XSQes7TpjLMtnDw
+[2014-04-24 07:30:28,833][INFO ][http                     ] [Libra] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-24 07:30:28,833][INFO ][node                     ] [Libra] started
+[2014-04-24 07:30:29,333][INFO ][gateway                  ] [Libra] recovered [3] indices into cluster_state
+[2014-04-24 08:29:46,088][WARN ][transport.netty          ] [Libra] exception caught on transport layer [[id: 0x77df2b57]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-24 16:18:52,088][WARN ][transport.netty          ] [Libra] exception caught on transport layer [[id: 0x6291eeb6]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-24 19:55:30,531][WARN ][transport.netty          ] [Libra] exception caught on transport layer [[id: 0xadc3ea94]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-24 21:09:46,515][INFO ][node                     ] [Libra] stopping ...
+[2014-04-24 21:09:46,578][INFO ][node                     ] [Libra] stopped
+[2014-04-24 21:09:46,593][INFO ][node                     ] [Libra] closing ...
+[2014-04-24 21:09:46,593][INFO ][node                     ] [Libra] closed
+[2014-04-24 21:10:23,291][INFO ][node                     ] [Tessa] version[0.90.10], pid[1692], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-24 21:10:23,291][INFO ][node                     ] [Tessa] initializing ...
+[2014-04-24 21:10:23,291][INFO ][plugins                  ] [Tessa] loaded [], sites []
+[2014-04-24 21:10:25,323][INFO ][node                     ] [Tessa] initialized
+[2014-04-24 21:10:25,323][INFO ][node                     ] [Tessa] starting ...
+[2014-04-24 21:10:25,494][INFO ][transport                ] [Tessa] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-24 21:10:28,651][INFO ][cluster.service          ] [Tessa] new_master [Tessa][rJf_Xf9YTCOYVYdpbTRnTg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-24 21:10:28,666][INFO ][discovery                ] [Tessa] elasticsearch/rJf_Xf9YTCOYVYdpbTRnTg
+[2014-04-24 21:10:28,916][INFO ][http                     ] [Tessa] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-24 21:10:28,916][INFO ][node                     ] [Tessa] started
+[2014-04-24 21:10:29,202][INFO ][gateway                  ] [Tessa] recovered [3] indices into cluster_state

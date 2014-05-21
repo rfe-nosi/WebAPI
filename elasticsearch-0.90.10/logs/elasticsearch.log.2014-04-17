@@ -1,0 +1,39 @@
+[2014-04-17 07:21:02,614][INFO ][node                     ] [Warrior Woman] version[0.90.10], pid[1476], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-17 07:21:02,614][INFO ][node                     ] [Warrior Woman] initializing ...
+[2014-04-17 07:21:02,630][INFO ][plugins                  ] [Warrior Woman] loaded [], sites []
+[2014-04-17 07:21:05,419][INFO ][node                     ] [Warrior Woman] initialized
+[2014-04-17 07:21:05,419][INFO ][node                     ] [Warrior Woman] starting ...
+[2014-04-17 07:21:05,669][INFO ][transport                ] [Warrior Woman] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-17 07:21:08,900][INFO ][cluster.service          ] [Warrior Woman] new_master [Warrior Woman][RzYGrxGOT3u-rCXuO3P8Fw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-17 07:21:08,932][INFO ][discovery                ] [Warrior Woman] elasticsearch/RzYGrxGOT3u-rCXuO3P8Fw
+[2014-04-17 07:21:09,045][INFO ][http                     ] [Warrior Woman] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-17 07:21:09,045][INFO ][node                     ] [Warrior Woman] started
+[2014-04-17 07:21:09,467][INFO ][gateway                  ] [Warrior Woman] recovered [1] indices into cluster_state
+[2014-04-17 07:49:35,732][INFO ][node                     ] [Killraven] version[0.90.10], pid[4668], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-17 07:49:35,732][INFO ][node                     ] [Killraven] initializing ...
+[2014-04-17 07:49:35,747][INFO ][plugins                  ] [Killraven] loaded [], sites []
+[2014-04-17 07:49:37,654][INFO ][node                     ] [Killraven] initialized
+[2014-04-17 07:49:37,654][INFO ][node                     ] [Killraven] starting ...
+[2014-04-17 07:49:37,810][INFO ][transport                ] [Killraven] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.248.1:9301]}
+[2014-04-17 07:49:41,154][INFO ][cluster.service          ] [Warrior Woman] added {[Killraven][6-R4sD_iQpW1cEkDJf1_bA][inet[/192.168.248.1:9301]],}, reason: zen-disco-receive(join from node[[Killraven][6-R4sD_iQpW1cEkDJf1_bA][inet[/192.168.248.1:9301]]])
+[2014-04-17 07:49:41,185][INFO ][cluster.service          ] [Killraven] detected_master [Warrior Woman][RzYGrxGOT3u-rCXuO3P8Fw][inet[/192.168.248.1:9300]], added {[Warrior Woman][RzYGrxGOT3u-rCXuO3P8Fw][inet[/192.168.248.1:9300]],}, reason: zen-disco-receive(from master [[Warrior Woman][RzYGrxGOT3u-rCXuO3P8Fw][inet[/192.168.248.1:9300]]])
+[2014-04-17 07:49:41,232][INFO ][gateway.local.state.meta ] [Killraven] [myfirstindex] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-17 07:49:41,232][INFO ][gateway.local.state.meta ] [Killraven] [test] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-17 07:49:41,232][INFO ][gateway.local.state.meta ] [Killraven] [slab] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-17 07:49:41,247][INFO ][gateway.local.state.meta ] [Killraven] [log] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-17 07:49:41,247][INFO ][discovery                ] [Killraven] elasticsearch/6-R4sD_iQpW1cEkDJf1_bA
+[2014-04-17 07:49:41,263][INFO ][gateway.local.state.meta ] [Warrior Woman] auto importing dangled indices [slab/OPEN][test/OPEN][myfirstindex/OPEN][log/OPEN] from [[Killraven][6-R4sD_iQpW1cEkDJf1_bA][inet[/192.168.248.1:9301]]]
+[2014-04-17 07:49:41,435][INFO ][http                     ] [Killraven] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.248.1:9201]}
+[2014-04-17 07:49:41,435][INFO ][node                     ] [Killraven] started
+[2014-04-17 07:49:45,199][INFO ][cluster.service          ] [Warrior Woman] removed {[Killraven][6-R4sD_iQpW1cEkDJf1_bA][inet[/192.168.248.1:9301]],}, reason: zen-disco-node_failed([Killraven][6-R4sD_iQpW1cEkDJf1_bA][inet[/192.168.248.1:9301]]), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2014-04-17 08:16:12,586][INFO ][node                     ] [Bible John] version[0.90.10], pid[1484], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-17 08:16:12,602][INFO ][node                     ] [Bible John] initializing ...
+[2014-04-17 08:16:12,602][INFO ][plugins                  ] [Bible John] loaded [], sites []
+[2014-04-17 08:16:14,732][INFO ][node                     ] [Bible John] initialized
+[2014-04-17 08:16:14,732][INFO ][node                     ] [Bible John] starting ...
+[2014-04-17 08:16:14,888][INFO ][transport                ] [Bible John] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-17 08:16:18,032][INFO ][cluster.service          ] [Bible John] new_master [Bible John][XQR1gz4sTqOaQ5taqX443w][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-17 08:16:18,043][INFO ][discovery                ] [Bible John] elasticsearch/XQR1gz4sTqOaQ5taqX443w
+[2014-04-17 08:16:18,122][INFO ][http                     ] [Bible John] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-04-17 08:16:18,122][INFO ][node                     ] [Bible John] started
+[2014-04-17 08:16:18,529][INFO ][gateway                  ] [Bible John] recovered [5] indices into cluster_state

@@ -1,0 +1,13 @@
+[2014-05-17 07:18:58,336][INFO ][node                     ] [Darkoth] version[0.90.10], pid[1632], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-17 07:18:58,336][INFO ][node                     ] [Darkoth] initializing ...
+[2014-05-17 07:18:58,336][INFO ][plugins                  ] [Darkoth] loaded [], sites []
+[2014-05-17 07:19:00,356][INFO ][node                     ] [Darkoth] initialized
+[2014-05-17 07:19:00,356][INFO ][node                     ] [Darkoth] starting ...
+[2014-05-17 07:19:00,513][INFO ][transport                ] [Darkoth] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-05-17 07:19:03,698][INFO ][cluster.service          ] [Darkoth] new_master [Darkoth][5zqONcfoQrO1aTA94vE0Iw][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-17 07:19:03,713][INFO ][discovery                ] [Darkoth] elasticsearch/5zqONcfoQrO1aTA94vE0Iw
+[2014-05-17 07:19:03,807][INFO ][http                     ] [Darkoth] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-05-17 07:19:03,807][INFO ][node                     ] [Darkoth] started
+[2014-05-17 07:19:04,250][INFO ][gateway                  ] [Darkoth] recovered [4] indices into cluster_state
+[2014-05-17 11:05:18,833][INFO ][cluster.metadata         ] [Darkoth] [cachecow] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-05-17 11:05:19,003][INFO ][cluster.metadata         ] [Darkoth] [cachecow] update_mapping [cachecow] (dynamic)
