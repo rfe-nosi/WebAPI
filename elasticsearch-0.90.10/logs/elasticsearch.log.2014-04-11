@@ -1,0 +1,13 @@
+[2014-04-11 09:10:50,572][INFO ][node                     ] [Volpan] version[0.90.10], pid[1856], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-11 09:10:50,572][INFO ][node                     ] [Volpan] initializing ...
+[2014-04-11 09:10:50,572][INFO ][plugins                  ] [Volpan] loaded [], sites []
+[2014-04-11 09:10:52,621][INFO ][node                     ] [Volpan] initialized
+[2014-04-11 09:10:52,621][INFO ][node                     ] [Volpan] starting ...
+[2014-04-11 09:10:52,761][INFO ][transport                ] [Volpan] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-11 09:10:55,928][INFO ][cluster.service          ] [Volpan] new_master [Volpan][K7IYx5uITymIEjAEQVNi0g][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-11 09:10:55,949][INFO ][discovery                ] [Volpan] elasticsearch/K7IYx5uITymIEjAEQVNi0g
+[2014-04-11 09:10:56,027][INFO ][http                     ] [Volpan] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-11 09:10:56,027][INFO ][node                     ] [Volpan] started
+[2014-04-11 09:10:56,449][INFO ][gateway                  ] [Volpan] recovered [8] indices into cluster_state
+[2014-04-11 21:35:33,198][INFO ][cluster.metadata         ] [Volpan] [outofprocessslab-2014.04.11] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2014-04-11 21:35:33,602][INFO ][cluster.metadata         ] [Volpan] [outofprocessslab-2014.04.11] update_mapping [webapitracing] (dynamic)

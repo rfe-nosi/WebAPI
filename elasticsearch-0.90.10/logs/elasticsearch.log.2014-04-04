@@ -1,0 +1,78 @@
+[2014-04-04 19:16:06,530][WARN ][cluster.service          ] [Blue Streak] failed to reconnect to node [Blue Streak][AiL9EY6eSbSivpXWNw_zwA][inet[/192.168.248.1:9300]]
+org.elasticsearch.transport.ConnectTransportException: [Blue Streak][inet[/192.168.248.1:9300]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:711)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:640)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:507)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /192.168.248.1:9300
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2014-04-04 20:06:43,834][INFO ][node                     ] [Blue Streak] stopping ...
+[2014-04-04 20:06:43,944][INFO ][node                     ] [Blue Streak] stopped
+[2014-04-04 20:06:43,944][INFO ][node                     ] [Blue Streak] closing ...
+[2014-04-04 20:06:43,959][INFO ][node                     ] [Blue Streak] closed
+[2014-04-04 20:07:28,326][INFO ][node                     ] [Doctor Minerva?] version[0.90.10], pid[1204], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-04 20:07:28,326][INFO ][node                     ] [Doctor Minerva?] initializing ...
+[2014-04-04 20:07:28,342][INFO ][plugins                  ] [Doctor Minerva?] loaded [], sites []
+[2014-04-04 20:07:31,200][INFO ][node                     ] [Doctor Minerva?] initialized
+[2014-04-04 20:07:31,200][INFO ][node                     ] [Doctor Minerva?] starting ...
+[2014-04-04 20:07:31,512][INFO ][transport                ] [Doctor Minerva?] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-04 20:07:34,876][INFO ][cluster.service          ] [Doctor Minerva?] new_master [Doctor Minerva?][TNCJXp2XRd6PS_hxXgQ-bQ][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-04 20:07:34,907][INFO ][discovery                ] [Doctor Minerva?] elasticsearch/TNCJXp2XRd6PS_hxXgQ-bQ
+[2014-04-04 20:07:35,017][INFO ][http                     ] [Doctor Minerva?] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-04 20:07:35,017][INFO ][node                     ] [Doctor Minerva?] started
+[2014-04-04 20:07:35,826][INFO ][gateway                  ] [Doctor Minerva?] recovered [7] indices into cluster_state
+[2014-04-04 20:18:15,955][INFO ][node                     ] [Doctor Minerva?] stopping ...
+[2014-04-04 20:18:16,033][INFO ][node                     ] [Doctor Minerva?] stopped
+[2014-04-04 20:18:16,033][INFO ][node                     ] [Doctor Minerva?] closing ...
+[2014-04-04 20:18:16,033][INFO ][node                     ] [Doctor Minerva?] closed
+[2014-04-04 20:18:51,983][INFO ][node                     ] [Tarot] version[0.90.10], pid[1460], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-04 20:18:51,983][INFO ][node                     ] [Tarot] initializing ...
+[2014-04-04 20:18:51,983][INFO ][plugins                  ] [Tarot] loaded [], sites []
+[2014-04-04 20:18:55,217][INFO ][node                     ] [Tarot] initialized
+[2014-04-04 20:18:55,217][INFO ][node                     ] [Tarot] starting ...
+[2014-04-04 20:18:55,451][INFO ][transport                ] [Tarot] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-04 20:18:58,680][INFO ][cluster.service          ] [Tarot] new_master [Tarot][VHduErSfT1K9I0KRQAobwg][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-04 20:18:58,711][INFO ][discovery                ] [Tarot] elasticsearch/VHduErSfT1K9I0KRQAobwg
+[2014-04-04 20:18:58,836][INFO ][http                     ] [Tarot] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-04 20:18:58,836][INFO ][node                     ] [Tarot] started
+[2014-04-04 20:18:59,392][INFO ][gateway                  ] [Tarot] recovered [7] indices into cluster_state
+[2014-04-04 20:29:04,800][INFO ][node                     ] [Tarot] stopping ...
+[2014-04-04 20:29:04,878][INFO ][node                     ] [Tarot] stopped
+[2014-04-04 20:29:04,878][INFO ][node                     ] [Tarot] closing ...
+[2014-04-04 20:29:04,878][INFO ][node                     ] [Tarot] closed
+[2014-04-04 20:29:39,925][INFO ][node                     ] [Vengeance] version[0.90.10], pid[1468], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-04 20:29:39,926][INFO ][node                     ] [Vengeance] initializing ...
+[2014-04-04 20:29:39,927][INFO ][plugins                  ] [Vengeance] loaded [], sites []
+[2014-04-04 20:29:42,972][INFO ][node                     ] [Vengeance] initialized
+[2014-04-04 20:29:42,972][INFO ][node                     ] [Vengeance] starting ...
+[2014-04-04 20:29:43,190][INFO ][transport                ] [Vengeance] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-04 20:29:46,450][INFO ][cluster.service          ] [Vengeance] new_master [Vengeance][BWSO23xIRwmnfHR8kSjTjA][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-04 20:29:46,482][INFO ][discovery                ] [Vengeance] elasticsearch/BWSO23xIRwmnfHR8kSjTjA
+[2014-04-04 20:29:46,607][INFO ][http                     ] [Vengeance] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-04 20:29:46,607][INFO ][node                     ] [Vengeance] started
+[2014-04-04 20:29:47,210][INFO ][gateway                  ] [Vengeance] recovered [7] indices into cluster_state
+[2014-04-04 20:39:52,269][INFO ][node                     ] [Vengeance] stopping ...
+[2014-04-04 20:39:52,332][INFO ][node                     ] [Vengeance] stopped
+[2014-04-04 20:39:52,332][INFO ][node                     ] [Vengeance] closing ...
+[2014-04-04 20:39:52,347][INFO ][node                     ] [Vengeance] closed
+[2014-04-04 20:40:27,531][INFO ][node                     ] [Primal] version[0.90.10], pid[1428], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-04 20:40:27,531][INFO ][node                     ] [Primal] initializing ...
+[2014-04-04 20:40:27,531][INFO ][plugins                  ] [Primal] loaded [], sites []
+[2014-04-04 20:40:30,582][INFO ][node                     ] [Primal] initialized
+[2014-04-04 20:40:30,582][INFO ][node                     ] [Primal] starting ...
+[2014-04-04 20:40:30,816][INFO ][transport                ] [Primal] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-04-04 20:40:34,056][INFO ][cluster.service          ] [Primal] new_master [Primal][UQ5bP2MbRuCrDyQb3lMagQ][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-04 20:40:34,088][INFO ][discovery                ] [Primal] elasticsearch/UQ5bP2MbRuCrDyQb3lMagQ
+[2014-04-04 20:40:34,204][INFO ][http                     ] [Primal] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-04-04 20:40:34,204][INFO ][node                     ] [Primal] started
+[2014-04-04 20:40:34,790][INFO ][gateway                  ] [Primal] recovered [7] indices into cluster_state

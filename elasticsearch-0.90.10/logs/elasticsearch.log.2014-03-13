@@ -1,0 +1,11 @@
+[2014-03-13 07:59:55,319][INFO ][node                     ] [Rock] version[0.90.10], pid[1644], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-13 07:59:55,319][INFO ][node                     ] [Rock] initializing ...
+[2014-03-13 07:59:55,319][INFO ][plugins                  ] [Rock] loaded [], sites []
+[2014-03-13 07:59:57,452][INFO ][node                     ] [Rock] initialized
+[2014-03-13 07:59:57,452][INFO ][node                     ] [Rock] starting ...
+[2014-03-13 07:59:57,609][INFO ][transport                ] [Rock] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.23.1.108:9300]}
+[2014-03-13 08:00:00,793][INFO ][cluster.service          ] [Rock] new_master [Rock][OysgMOuORzyNO3aMkrJNeg][inet[/10.23.1.108:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-13 08:00:00,809][INFO ][discovery                ] [Rock] elasticsearch/OysgMOuORzyNO3aMkrJNeg
+[2014-03-13 08:00:00,892][INFO ][http                     ] [Rock] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.23.1.108:9200]}
+[2014-03-13 08:00:00,892][INFO ][node                     ] [Rock] started
+[2014-03-13 08:00:01,267][INFO ][gateway                  ] [Rock] recovered [2] indices into cluster_state

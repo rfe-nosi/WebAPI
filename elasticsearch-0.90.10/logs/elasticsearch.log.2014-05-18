@@ -1,0 +1,166 @@
+[2014-05-18 16:23:15,212][DEBUG][action.search.type       ] [Darkoth] [cachecow][4], node[5zqONcfoQrO1aTA94vE0Iw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5eb540a]
+org.elasticsearch.search.SearchParseException: [cachecow][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "query": "match_all" : { "/api/values/8" }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [cachecow] Failed to parse
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:257)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character (':' (code 58)): was expecting comma to separate OBJECT entries
+ at [Source: [B@c836349; line: 2, column: 25]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:688)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:187)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	... 14 more
+[2014-05-18 16:23:15,212][DEBUG][action.search.type       ] [Darkoth] [cachecow][3], node[5zqONcfoQrO1aTA94vE0Iw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5eb540a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [cachecow][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "query": "match_all" : { "/api/values/8" }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [cachecow] Failed to parse
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:257)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character (':' (code 58)): was expecting comma to separate OBJECT entries
+ at [Source: [B@c836349; line: 2, column: 25]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:688)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:187)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	... 14 more
+[2014-05-18 16:23:15,212][DEBUG][action.search.type       ] [Darkoth] [cachecow][0], node[5zqONcfoQrO1aTA94vE0Iw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5eb540a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [cachecow][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "query": "match_all" : { "/api/values/8" }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [cachecow] Failed to parse
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:257)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character (':' (code 58)): was expecting comma to separate OBJECT entries
+ at [Source: [B@c836349; line: 2, column: 25]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:688)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:187)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	... 14 more
+[2014-05-18 16:23:15,212][DEBUG][action.search.type       ] [Darkoth] [cachecow][1], node[5zqONcfoQrO1aTA94vE0Iw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5eb540a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [cachecow][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "query": "match_all" : { "/api/values/8" }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [cachecow] Failed to parse
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:257)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character (':' (code 58)): was expecting comma to separate OBJECT entries
+ at [Source: [B@c836349; line: 2, column: 25]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:688)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:187)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	... 14 more
+[2014-05-18 16:23:15,212][DEBUG][action.search.type       ] [Darkoth] [cachecow][2], node[5zqONcfoQrO1aTA94vE0Iw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5eb540a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [cachecow][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+  "query": "match_all" : { "/api/values/8" }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [cachecow] Failed to parse
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:257)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character (':' (code 58)): was expecting comma to separate OBJECT entries
+ at [Source: [B@c836349; line: 2, column: 25]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1524)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:557)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:475)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:688)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:50)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:187)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	... 14 more
+[2014-05-18 16:23:15,220][DEBUG][action.search.type       ] [Darkoth] All shards failed for phase: [query]

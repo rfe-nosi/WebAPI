@@ -1,0 +1,481 @@
+[2014-04-10 11:14:58,780][INFO ][cluster.metadata         ] [X-Man] [outofprocessslab-2014.04.10] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2014-04-10 11:14:59,188][INFO ][cluster.metadata         ] [X-Man] [outofprocessslab-2014.04.10] update_mapping [webapitracing] (dynamic)
+[2014-04-10 11:23:54,867][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][3], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d4d8ebc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"filtered":{"query":{"query_string":{"query":"InstanceName:"}}}},"fields":["keywords","task","payload","taskName","eventId","providerName","opcodeName","hostName","providerId","eventName","formattedMessage","dateOfBirth","updatedTimestamp","typeSpecificForAnimalType","createdTimestamp","description","gender","lastLocation","animalType","Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"from":0,"size":50,"sort":{"_score":{"order":"asc"}},"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [outofprocessslab-2014.04.10] Failed to parse query [InstanceName:]
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:232)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.FilteredQueryParser.parse(FilteredQueryParser.java:71)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'InstanceName:': Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:125)
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:215)
+	... 19 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:708)
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:590)
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:275)
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:181)
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:170)
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:120)
+	... 20 more
+[2014-04-10 11:23:54,867][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][1], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d4d8ebc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"filtered":{"query":{"query_string":{"query":"InstanceName:"}}}},"fields":["keywords","task","payload","taskName","eventId","providerName","opcodeName","hostName","providerId","eventName","formattedMessage","dateOfBirth","updatedTimestamp","typeSpecificForAnimalType","createdTimestamp","description","gender","lastLocation","animalType","Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"from":0,"size":50,"sort":{"_score":{"order":"asc"}},"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [outofprocessslab-2014.04.10] Failed to parse query [InstanceName:]
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:232)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.FilteredQueryParser.parse(FilteredQueryParser.java:71)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'InstanceName:': Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:125)
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:215)
+	... 19 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:708)
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:590)
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:275)
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:181)
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:170)
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:120)
+	... 20 more
+[2014-04-10 11:23:54,867][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][2], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d4d8ebc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"filtered":{"query":{"query_string":{"query":"InstanceName:"}}}},"fields":["keywords","task","payload","taskName","eventId","providerName","opcodeName","hostName","providerId","eventName","formattedMessage","dateOfBirth","updatedTimestamp","typeSpecificForAnimalType","createdTimestamp","description","gender","lastLocation","animalType","Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"from":0,"size":50,"sort":{"_score":{"order":"asc"}},"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [outofprocessslab-2014.04.10] Failed to parse query [InstanceName:]
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:232)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.FilteredQueryParser.parse(FilteredQueryParser.java:71)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'InstanceName:': Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:125)
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:215)
+	... 19 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:708)
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:590)
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:275)
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:181)
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:170)
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:120)
+	... 20 more
+[2014-04-10 11:23:54,867][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][4], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d4d8ebc] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"filtered":{"query":{"query_string":{"query":"InstanceName:"}}}},"fields":["keywords","task","payload","taskName","eventId","providerName","opcodeName","hostName","providerId","eventName","formattedMessage","dateOfBirth","updatedTimestamp","typeSpecificForAnimalType","createdTimestamp","description","gender","lastLocation","animalType","Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"from":0,"size":50,"sort":{"_score":{"order":"asc"}},"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [outofprocessslab-2014.04.10] Failed to parse query [InstanceName:]
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:232)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.FilteredQueryParser.parse(FilteredQueryParser.java:71)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'InstanceName:': Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:125)
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:215)
+	... 19 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:708)
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:590)
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:275)
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:181)
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:170)
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:120)
+	... 20 more
+[2014-04-10 11:23:54,867][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][0], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7d4d8ebc]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"filtered":{"query":{"query_string":{"query":"InstanceName:"}}}},"fields":["keywords","task","payload","taskName","eventId","providerName","opcodeName","hostName","providerId","eventName","formattedMessage","dateOfBirth","updatedTimestamp","typeSpecificForAnimalType","createdTimestamp","description","gender","lastLocation","animalType","Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"from":0,"size":50,"sort":{"_score":{"order":"asc"}},"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [outofprocessslab-2014.04.10] Failed to parse query [InstanceName:]
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:232)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.FilteredQueryParser.parse(FilteredQueryParser.java:71)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:207)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:284)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:255)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'InstanceName:': Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:125)
+	at org.elasticsearch.index.query.QueryStringQueryParser.parse(QueryStringQueryParser.java:215)
+	... 19 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 13.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:708)
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:590)
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:275)
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:181)
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:170)
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:120)
+	... 20 more
+[2014-04-10 11:23:54,883][DEBUG][action.search.type       ] [X-Man] All shards failed for phase: [query]
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][4], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3b71b63e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][4]: from[0],size[50]: Parse Failure [Failed to parse source [{"from":0,"size":50,"sort":{"updatedTimestamp":{"order":"desc"}},"fields":["Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][4]: from[0],size[50]: Parse Failure [No mapping found for [updatedTimestamp] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:199)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:173)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:91)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][0], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3b71b63e]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][0]: from[0],size[50]: Parse Failure [Failed to parse source [{"from":0,"size":50,"sort":{"updatedTimestamp":{"order":"desc"}},"fields":["Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][0]: from[0],size[50]: Parse Failure [No mapping found for [updatedTimestamp] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:199)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:173)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:91)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] All shards failed for phase: [query]
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][3], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3b71b63e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][3]: from[0],size[50]: Parse Failure [Failed to parse source [{"from":0,"size":50,"sort":{"updatedTimestamp":{"order":"desc"}},"fields":["Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][3]: from[0],size[50]: Parse Failure [No mapping found for [updatedTimestamp] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:199)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:173)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:91)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][1], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3b71b63e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][1]: from[0],size[50]: Parse Failure [Failed to parse source [{"from":0,"size":50,"sort":{"updatedTimestamp":{"order":"desc"}},"fields":["Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][1]: from[0],size[50]: Parse Failure [No mapping found for [updatedTimestamp] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:199)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:173)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:91)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+[2014-04-10 11:25:59,169][DEBUG][action.search.type       ] [X-Man] [outofprocessslab-2014.04.10][2], node[9UtzkxVFSWSMtqMImRZznQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3b71b63e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][2]: from[0],size[50]: Parse Failure [Failed to parse source [{"from":0,"size":50,"sort":{"updatedTimestamp":{"order":"desc"}},"fields":["Payload_message","Message","Task","ProviderName","ProviderId","Opcode","EventId","Level","Version","Keywords","InstanceName","EventDate","formattedBody","reason","name","place"],"explain":true}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:581)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:202)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:216)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:203)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:186)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.search.SearchParseException: [outofprocessslab-2014.04.10][2]: from[0],size[50]: Parse Failure [No mapping found for [updatedTimestamp] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:199)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:173)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:91)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:569)
+	... 12 more
+[2014-04-10 15:56:28,108][INFO ][node                     ] [X-Man] stopping ...
+[2014-04-10 15:56:28,358][INFO ][node                     ] [X-Man] stopped
+[2014-04-10 15:56:28,358][INFO ][node                     ] [X-Man] closing ...
+[2014-04-10 15:56:28,374][INFO ][node                     ] [X-Man] closed
+[2014-04-10 16:18:59,368][INFO ][node                     ] [Smallwood, Marrina] version[0.90.10], pid[1404], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-10 16:18:59,368][INFO ][node                     ] [Smallwood, Marrina] initializing ...
+[2014-04-10 16:18:59,384][INFO ][plugins                  ] [Smallwood, Marrina] loaded [], sites []
+[2014-04-10 16:19:02,198][INFO ][node                     ] [Smallwood, Marrina] initialized
+[2014-04-10 16:19:02,198][INFO ][node                     ] [Smallwood, Marrina] starting ...
+[2014-04-10 16:19:02,408][INFO ][transport                ] [Smallwood, Marrina] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-10 16:19:05,664][INFO ][cluster.service          ] [Smallwood, Marrina] new_master [Smallwood, Marrina][3LkQBplBQyi7L6fpZwwQaA][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-10 16:19:05,699][INFO ][discovery                ] [Smallwood, Marrina] elasticsearch/3LkQBplBQyi7L6fpZwwQaA
+[2014-04-10 16:19:05,818][INFO ][http                     ] [Smallwood, Marrina] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-10 16:19:05,818][INFO ][node                     ] [Smallwood, Marrina] started
+[2014-04-10 16:19:06,413][INFO ][gateway                  ] [Smallwood, Marrina] recovered [8] indices into cluster_state
+[2014-04-10 18:21:20,120][WARN ][transport.netty          ] [Smallwood, Marrina] exception caught on transport layer [[id: 0xfbb74190]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-10 21:59:50,088][WARN ][transport.netty          ] [Smallwood, Marrina] exception caught on transport layer [[id: 0x38601161]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-10 21:59:50,088][WARN ][transport.netty          ] [Smallwood, Marrina] exception caught on transport layer [[id: 0xa688672d]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)

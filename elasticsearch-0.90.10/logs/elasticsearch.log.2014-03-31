@@ -1,0 +1,40 @@
+[2014-03-31 08:04:31,683][INFO ][node                     ] [Kylun] version[0.90.10], pid[1404], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-31 08:04:31,683][INFO ][node                     ] [Kylun] initializing ...
+[2014-03-31 08:04:31,683][INFO ][plugins                  ] [Kylun] loaded [], sites []
+[2014-03-31 08:04:34,419][INFO ][node                     ] [Kylun] initialized
+[2014-03-31 08:04:34,419][INFO ][node                     ] [Kylun] starting ...
+[2014-03-31 08:04:34,636][INFO ][transport                ] [Kylun] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-31 08:04:37,859][INFO ][cluster.service          ] [Kylun] new_master [Kylun][kQBr4vKzTaa4XC7O9h3r2g][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-31 08:04:37,891][INFO ][discovery                ] [Kylun] elasticsearch/kQBr4vKzTaa4XC7O9h3r2g
+[2014-03-31 08:04:38,000][INFO ][http                     ] [Kylun] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-03-31 08:04:38,000][INFO ][node                     ] [Kylun] started
+[2014-03-31 08:04:38,505][INFO ][gateway                  ] [Kylun] recovered [2] indices into cluster_state
+[2014-03-31 08:44:59,276][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x155970d4]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-03-31 08:44:59,282][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x8490f980]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-03-31 09:56:37,566][WARN ][monitor.jvm              ] [Kylun] [gc][young][5420][4] duration [42.1s], collections [1]/[1s], total [42.1s]/[42.1s], memory [92.2mb]->[92.2mb]/[989.8mb], all_pools {[young] [68.3mb]->[68.3mb]/[273mb]}{[survivor] [8.4mb]->[8.4mb]/[34.1mb]}{[old] [15.4mb]->[15.4mb]/[682.6mb]}

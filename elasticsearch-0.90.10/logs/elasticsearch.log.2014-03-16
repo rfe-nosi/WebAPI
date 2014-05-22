@@ -1,0 +1,22 @@
+[2014-03-16 10:56:49,298][INFO ][node                     ] [Amergin] version[0.90.10], pid[1348], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-16 10:56:49,298][INFO ][node                     ] [Amergin] initializing ...
+[2014-03-16 10:56:49,298][INFO ][plugins                  ] [Amergin] loaded [], sites []
+[2014-03-16 10:56:51,360][INFO ][node                     ] [Amergin] initialized
+[2014-03-16 10:56:51,360][INFO ][node                     ] [Amergin] starting ...
+[2014-03-16 10:56:51,526][INFO ][transport                ] [Amergin] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-03-16 10:56:54,674][INFO ][cluster.service          ] [Amergin] new_master [Amergin][plT4QNRzThuGWLjsMqA1xw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-16 10:56:54,689][INFO ][discovery                ] [Amergin] elasticsearch/plT4QNRzThuGWLjsMqA1xw
+[2014-03-16 10:56:54,762][INFO ][http                     ] [Amergin] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-16 10:56:54,762][INFO ][node                     ] [Amergin] started
+[2014-03-16 10:56:55,126][INFO ][gateway                  ] [Amergin] recovered [2] indices into cluster_state
+[2014-03-16 20:39:54,878][INFO ][node                     ] [Mason, Louise] version[0.90.10], pid[1332], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-03-16 20:39:54,878][INFO ][node                     ] [Mason, Louise] initializing ...
+[2014-03-16 20:39:54,878][INFO ][plugins                  ] [Mason, Louise] loaded [], sites []
+[2014-03-16 20:39:57,724][INFO ][node                     ] [Mason, Louise] initialized
+[2014-03-16 20:39:57,724][INFO ][node                     ] [Mason, Louise] starting ...
+[2014-03-16 20:39:57,942][INFO ][transport                ] [Mason, Louise] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-03-16 20:40:01,174][INFO ][cluster.service          ] [Mason, Louise] new_master [Mason, Louise][J039v40iR6aNsAJRuU9L_A][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-03-16 20:40:01,189][INFO ][discovery                ] [Mason, Louise] elasticsearch/J039v40iR6aNsAJRuU9L_A
+[2014-03-16 20:40:01,315][INFO ][http                     ] [Mason, Louise] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-03-16 20:40:01,315][INFO ][node                     ] [Mason, Louise] started
+[2014-03-16 20:40:01,794][INFO ][gateway                  ] [Mason, Louise] recovered [2] indices into cluster_state

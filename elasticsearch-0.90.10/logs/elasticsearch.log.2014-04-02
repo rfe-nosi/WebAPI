@@ -1,0 +1,116 @@
+[2014-04-02 06:28:34,140][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x106bb0b1]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-02 06:28:34,380][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x587d060a]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-02 07:29:22,593][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x8a98c48f]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-02 07:29:22,593][WARN ][transport.netty          ] [Kylun] exception caught on transport layer [[id: 0x4843be87]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-02 16:44:28,960][INFO ][node                     ] [Captain Zero] version[0.90.10], pid[1440], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-02 16:44:28,960][INFO ][node                     ] [Captain Zero] initializing ...
+[2014-04-02 16:44:28,975][INFO ][plugins                  ] [Captain Zero] loaded [], sites []
+[2014-04-02 16:44:31,779][INFO ][node                     ] [Captain Zero] initialized
+[2014-04-02 16:44:31,779][INFO ][node                     ] [Captain Zero] starting ...
+[2014-04-02 16:44:32,013][INFO ][transport                ] [Captain Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-02 16:44:35,266][INFO ][cluster.service          ] [Captain Zero] new_master [Captain Zero][ZMnYs2MbQFivcOg9NpB3Fw][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-02 16:44:35,297][INFO ][discovery                ] [Captain Zero] elasticsearch/ZMnYs2MbQFivcOg9NpB3Fw
+[2014-04-02 16:44:35,407][INFO ][http                     ] [Captain Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-02 16:44:35,407][INFO ][node                     ] [Captain Zero] started
+[2014-04-02 16:44:35,897][INFO ][gateway                  ] [Captain Zero] recovered [2] indices into cluster_state
+[2014-04-02 16:52:49,399][INFO ][node                     ] [Elven] version[0.90.10], pid[4484], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-02 16:52:49,399][INFO ][node                     ] [Elven] initializing ...
+[2014-04-02 16:52:49,414][INFO ][plugins                  ] [Elven] loaded [], sites []
+[2014-04-02 16:52:51,696][INFO ][node                     ] [Elven] initialized
+[2014-04-02 16:52:51,696][INFO ][node                     ] [Elven] starting ...
+[2014-04-02 16:52:51,883][INFO ][transport                ] [Elven] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/192.168.248.1:9301]}
+[2014-04-02 16:52:55,414][INFO ][cluster.service          ] [Captain Zero] added {[Elven][9MaJEhUaRNuJvR6wTZe9PA][inet[/192.168.248.1:9301]],}, reason: zen-disco-receive(join from node[[Elven][9MaJEhUaRNuJvR6wTZe9PA][inet[/192.168.248.1:9301]]])
+[2014-04-02 16:52:55,446][INFO ][cluster.service          ] [Elven] detected_master [Captain Zero][ZMnYs2MbQFivcOg9NpB3Fw][inet[/192.168.248.1:9300]], added {[Captain Zero][ZMnYs2MbQFivcOg9NpB3Fw][inet[/192.168.248.1:9300]],}, reason: zen-disco-receive(from master [[Captain Zero][ZMnYs2MbQFivcOg9NpB3Fw][inet[/192.168.248.1:9300]]])
+[2014-04-02 16:52:55,508][INFO ][gateway.local.state.meta ] [Elven] [myfirstindex] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-02 16:52:55,508][INFO ][gateway.local.state.meta ] [Elven] [test] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-02 16:52:55,508][INFO ][gateway.local.state.meta ] [Elven] [slab] dangling index, exists on local file system, but not in cluster metadata, scheduling to delete in [2h], auto import to cluster state [YES]
+[2014-04-02 16:52:55,524][INFO ][discovery                ] [Elven] elasticsearch/9MaJEhUaRNuJvR6wTZe9PA
+[2014-04-02 16:52:55,539][INFO ][gateway.local.state.meta ] [Captain Zero] auto importing dangled indices [slab/OPEN][test/OPEN][myfirstindex/OPEN] from [[Elven][9MaJEhUaRNuJvR6wTZe9PA][inet[/192.168.248.1:9301]]]
+[2014-04-02 16:52:55,711][INFO ][http                     ] [Elven] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/192.168.248.1:9201]}
+[2014-04-02 16:52:55,711][INFO ][node                     ] [Elven] started
+[2014-04-02 17:01:26,469][INFO ][cluster.service          ] [Captain Zero] removed {[Elven][9MaJEhUaRNuJvR6wTZe9PA][inet[/192.168.248.1:9301]],}, reason: zen-disco-node_failed([Elven][9MaJEhUaRNuJvR6wTZe9PA][inet[/192.168.248.1:9301]]), reason transport disconnected (with verified connect)
+[2014-04-02 17:01:30,438][INFO ][node                     ] [Captain Zero] stopping ...
+[2014-04-02 17:01:30,532][INFO ][node                     ] [Captain Zero] stopped
+[2014-04-02 17:01:30,532][INFO ][node                     ] [Captain Zero] closing ...
+[2014-04-02 17:01:30,532][INFO ][node                     ] [Captain Zero] closed
+[2014-04-02 17:01:32,204][INFO ][node                     ] [Infectia] version[0.90.10], pid[3260], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-02 17:01:32,204][INFO ][node                     ] [Infectia] initializing ...
+[2014-04-02 17:01:32,204][INFO ][plugins                  ] [Infectia] loaded [], sites []
+[2014-04-02 17:01:34,000][INFO ][node                     ] [Infectia] initialized
+[2014-04-02 17:01:34,000][INFO ][node                     ] [Infectia] starting ...
+[2014-04-02 17:01:34,172][INFO ][transport                ] [Infectia] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-02 17:01:37,626][INFO ][cluster.service          ] [Infectia] new_master [Infectia][rS_3Yz0ISPGgQFf3ISbf2A][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-02 17:01:37,688][INFO ][discovery                ] [Infectia] elasticsearch/rS_3Yz0ISPGgQFf3ISbf2A
+[2014-04-02 17:01:37,860][INFO ][http                     ] [Infectia] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-02 17:01:37,860][INFO ][node                     ] [Infectia] started
+[2014-04-02 17:01:38,251][INFO ][gateway                  ] [Infectia] recovered [5] indices into cluster_state
+[2014-04-02 17:03:55,143][INFO ][cluster.metadata         ] [Infectia] [myindex-2014.04.02] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2014-04-02 17:03:55,330][INFO ][cluster.metadata         ] [Infectia] [myindex-2014.04.02] update_mapping [mytype] (dynamic)
+[2014-04-02 20:17:33,186][WARN ][transport.netty          ] [Infectia] exception caught on transport layer [[id: 0x12e4bba2]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-02 20:51:24,744][INFO ][cluster.metadata         ] [Infectia] [outofprocessslab-2014.04.02] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2014-04-02 20:51:24,884][INFO ][cluster.metadata         ] [Infectia] [outofprocessslab-2014.04.02] update_mapping [test] (dynamic)

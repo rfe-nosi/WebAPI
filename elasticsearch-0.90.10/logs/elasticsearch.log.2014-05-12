@@ -1,0 +1,11 @@
+[2014-05-12 09:02:06,797][INFO ][node                     ] [Arlok] version[0.90.10], pid[1676], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-12 09:02:06,797][INFO ][node                     ] [Arlok] initializing ...
+[2014-05-12 09:02:06,813][INFO ][plugins                  ] [Arlok] loaded [], sites []
+[2014-05-12 09:02:08,967][INFO ][node                     ] [Arlok] initialized
+[2014-05-12 09:02:08,967][INFO ][node                     ] [Arlok] starting ...
+[2014-05-12 09:02:09,123][INFO ][transport                ] [Arlok] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-12 09:02:12,303][INFO ][cluster.service          ] [Arlok] new_master [Arlok][OlLbq9m1TDGqWv9aS8W8bg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-12 09:02:12,318][INFO ][discovery                ] [Arlok] elasticsearch/OlLbq9m1TDGqWv9aS8W8bg
+[2014-05-12 09:02:12,396][INFO ][http                     ] [Arlok] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-05-12 09:02:12,396][INFO ][node                     ] [Arlok] started
+[2014-05-12 09:02:12,791][INFO ][gateway                  ] [Arlok] recovered [4] indices into cluster_state

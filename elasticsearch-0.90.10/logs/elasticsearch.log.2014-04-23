@@ -1,0 +1,11 @@
+[2014-04-23 19:58:55,275][INFO ][node                     ] [Kala] version[0.90.10], pid[1764], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-23 19:58:55,275][INFO ][node                     ] [Kala] initializing ...
+[2014-04-23 19:58:55,290][INFO ][plugins                  ] [Kala] loaded [], sites []
+[2014-04-23 19:58:57,356][INFO ][node                     ] [Kala] initialized
+[2014-04-23 19:58:57,356][INFO ][node                     ] [Kala] starting ...
+[2014-04-23 19:58:57,512][INFO ][transport                ] [Kala] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-23 19:59:00,681][INFO ][cluster.service          ] [Kala] new_master [Kala][Q9tZLt9WS3G4vCoo_NtLgA][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-23 19:59:00,696][INFO ][discovery                ] [Kala] elasticsearch/Q9tZLt9WS3G4vCoo_NtLgA
+[2014-04-23 19:59:00,776][INFO ][http                     ] [Kala] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-23 19:59:00,776][INFO ][node                     ] [Kala] started
+[2014-04-23 19:59:01,204][INFO ][gateway                  ] [Kala] recovered [3] indices into cluster_state

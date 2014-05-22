@@ -1,0 +1,11 @@
+[2014-04-12 20:57:00,065][INFO ][node                     ] [Shinchuko Lotus] version[0.90.10], pid[1316], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-12 20:57:00,065][INFO ][node                     ] [Shinchuko Lotus] initializing ...
+[2014-04-12 20:57:00,065][INFO ][plugins                  ] [Shinchuko Lotus] loaded [], sites []
+[2014-04-12 20:57:02,920][INFO ][node                     ] [Shinchuko Lotus] initialized
+[2014-04-12 20:57:02,920][INFO ][node                     ] [Shinchuko Lotus] starting ...
+[2014-04-12 20:57:03,125][INFO ][transport                ] [Shinchuko Lotus] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-12 20:57:06,352][INFO ][cluster.service          ] [Shinchuko Lotus] new_master [Shinchuko Lotus][Dqj8eB40TxuLWmx_lZUm3g][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-12 20:57:06,384][INFO ][discovery                ] [Shinchuko Lotus] elasticsearch/Dqj8eB40TxuLWmx_lZUm3g
+[2014-04-12 20:57:06,509][INFO ][http                     ] [Shinchuko Lotus] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-12 20:57:06,509][INFO ][node                     ] [Shinchuko Lotus] started
+[2014-04-12 20:57:07,044][INFO ][gateway                  ] [Shinchuko Lotus] recovered [9] indices into cluster_state

@@ -1,0 +1,11 @@
+[2014-04-08 22:54:17,217][INFO ][node                     ] [X-Man] version[0.90.10], pid[1140], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-08 22:54:17,217][INFO ][node                     ] [X-Man] initializing ...
+[2014-04-08 22:54:17,217][INFO ][plugins                  ] [X-Man] loaded [], sites []
+[2014-04-08 22:54:19,263][INFO ][node                     ] [X-Man] initialized
+[2014-04-08 22:54:19,263][INFO ][node                     ] [X-Man] starting ...
+[2014-04-08 22:54:19,435][INFO ][transport                ] [X-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-08 22:54:22,604][INFO ][cluster.service          ] [X-Man] new_master [X-Man][9UtzkxVFSWSMtqMImRZznQ][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-08 22:54:22,635][INFO ][discovery                ] [X-Man] elasticsearch/9UtzkxVFSWSMtqMImRZznQ
+[2014-04-08 22:54:22,713][INFO ][http                     ] [X-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-08 22:54:22,713][INFO ][node                     ] [X-Man] started
+[2014-04-08 22:54:23,120][INFO ][gateway                  ] [X-Man] recovered [7] indices into cluster_state

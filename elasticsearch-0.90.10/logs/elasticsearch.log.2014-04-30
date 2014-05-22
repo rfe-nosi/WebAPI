@@ -1,0 +1,22 @@
+[2014-04-30 07:00:25,453][INFO ][node                     ] [Doctor Arthur Nagan] version[0.90.10], pid[1500], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-30 07:00:25,453][INFO ][node                     ] [Doctor Arthur Nagan] initializing ...
+[2014-04-30 07:00:25,453][INFO ][plugins                  ] [Doctor Arthur Nagan] loaded [], sites []
+[2014-04-30 07:00:28,395][INFO ][node                     ] [Doctor Arthur Nagan] initialized
+[2014-04-30 07:00:28,395][INFO ][node                     ] [Doctor Arthur Nagan] starting ...
+[2014-04-30 07:00:28,633][INFO ][transport                ] [Doctor Arthur Nagan] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-30 07:00:31,857][INFO ][cluster.service          ] [Doctor Arthur Nagan] new_master [Doctor Arthur Nagan][v3z9Js0GTkemuK_8kp8cTg][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-30 07:00:31,889][INFO ][discovery                ] [Doctor Arthur Nagan] elasticsearch/v3z9Js0GTkemuK_8kp8cTg
+[2014-04-30 07:00:32,028][INFO ][http                     ] [Doctor Arthur Nagan] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-30 07:00:32,028][INFO ][node                     ] [Doctor Arthur Nagan] started
+[2014-04-30 07:00:32,645][INFO ][gateway                  ] [Doctor Arthur Nagan] recovered [4] indices into cluster_state
+[2014-04-30 07:58:45,908][INFO ][node                     ] [Human Top II] version[0.90.10], pid[1444], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-30 07:58:45,908][INFO ][node                     ] [Human Top II] initializing ...
+[2014-04-30 07:58:45,908][INFO ][plugins                  ] [Human Top II] loaded [], sites []
+[2014-04-30 07:58:48,227][INFO ][node                     ] [Human Top II] initialized
+[2014-04-30 07:58:48,227][INFO ][node                     ] [Human Top II] starting ...
+[2014-04-30 07:58:48,368][INFO ][transport                ] [Human Top II] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.23.0.150:9300]}
+[2014-04-30 07:58:51,568][INFO ][cluster.service          ] [Human Top II] new_master [Human Top II][m59xuJGBSCiySjV57SLFhQ][inet[/10.23.0.150:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-30 07:58:51,586][INFO ][discovery                ] [Human Top II] elasticsearch/m59xuJGBSCiySjV57SLFhQ
+[2014-04-30 07:58:51,668][INFO ][http                     ] [Human Top II] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.23.0.150:9200]}
+[2014-04-30 07:58:51,668][INFO ][node                     ] [Human Top II] started
+[2014-04-30 07:58:52,060][INFO ][gateway                  ] [Human Top II] recovered [4] indices into cluster_state

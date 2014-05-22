@@ -1,0 +1,65 @@
+[2014-04-14 17:52:18,217][WARN ][transport.netty          ] [Shinchuko Lotus] exception caught on transport layer [[id: 0x549bd543]], closing connection
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-14 17:52:28,828][INFO ][node                     ] [Shinchuko Lotus] stopping ...
+[2014-04-14 17:52:28,984][INFO ][node                     ] [Shinchuko Lotus] stopped
+[2014-04-14 17:52:28,984][INFO ][node                     ] [Shinchuko Lotus] closing ...
+[2014-04-14 17:52:29,000][INFO ][node                     ] [Shinchuko Lotus] closed
+[2014-04-14 17:53:05,706][INFO ][node                     ] [Banner, Betty Ross] version[0.90.10], pid[1444], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-04-14 17:53:05,706][INFO ][node                     ] [Banner, Betty Ross] initializing ...
+[2014-04-14 17:53:05,721][INFO ][plugins                  ] [Banner, Betty Ross] loaded [], sites []
+[2014-04-14 17:53:08,611][INFO ][node                     ] [Banner, Betty Ross] initialized
+[2014-04-14 17:53:08,611][INFO ][node                     ] [Banner, Betty Ross] starting ...
+[2014-04-14 17:53:08,846][INFO ][transport                ] [Banner, Betty Ross] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-04-14 17:53:12,087][INFO ][cluster.service          ] [Banner, Betty Ross] new_master [Banner, Betty Ross][hoP6i0reRsmCea6BRgt2QQ][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-04-14 17:53:12,103][INFO ][discovery                ] [Banner, Betty Ross] elasticsearch/hoP6i0reRsmCea6BRgt2QQ
+[2014-04-14 17:53:12,235][INFO ][http                     ] [Banner, Betty Ross] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-04-14 17:53:12,235][INFO ][node                     ] [Banner, Betty Ross] started
+[2014-04-14 17:53:12,904][INFO ][gateway                  ] [Banner, Betty Ross] recovered [9] indices into cluster_state
+[2014-04-14 18:08:37,308][INFO ][cluster.metadata         ] [Banner, Betty Ross] [myfirstindex] deleting index
+[2014-04-14 18:10:11,629][INFO ][cluster.metadata         ] [Banner, Betty Ross] [test] deleting index
+[2014-04-14 18:10:19,691][INFO ][cluster.metadata         ] [Banner, Betty Ross] [slab] deleting index
+[2014-04-14 18:10:26,707][INFO ][cluster.metadata         ] [Banner, Betty Ross] [log] deleting index
+[2014-04-14 18:12:29,234][INFO ][cluster.metadata         ] [Banner, Betty Ross] [outofprocessslab-2014.04.10] deleting index
+[2014-04-14 18:14:00,727][INFO ][cluster.metadata         ] [Banner, Betty Ross] [outofprocessslab-2014.04.11] deleting index
+[2014-04-14 18:14:00,856][INFO ][cluster.metadata         ] [Banner, Betty Ross] [myindex-2014.04.02] deleting index
+[2014-04-14 18:14:00,882][INFO ][cluster.metadata         ] [Banner, Betty Ross] [outofprocessslab-2014.04.02] deleting index
+[2014-04-14 20:03:02,207][WARN ][transport.netty          ] [Banner, Betty Ross] exception caught on transport layer [[id: 0x6698b28b]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2014-04-14 20:03:02,998][WARN ][transport.netty          ] [Banner, Betty Ross] exception caught on transport layer [[id: 0xc5180b2e]], closing connection
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)

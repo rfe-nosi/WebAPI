@@ -1,0 +1,30 @@
+[2014-05-14 16:10:36,737][INFO ][node                     ] [Arlok] stopping ...
+[2014-05-14 16:10:36,847][INFO ][node                     ] [Arlok] stopped
+[2014-05-14 16:10:36,847][INFO ][node                     ] [Arlok] closing ...
+[2014-05-14 16:10:36,847][INFO ][node                     ] [Arlok] closed
+[2014-05-14 16:12:24,398][INFO ][node                     ] [Living Totem] version[0.90.10], pid[1280], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-14 16:12:24,398][INFO ][node                     ] [Living Totem] initializing ...
+[2014-05-14 16:12:24,414][INFO ][plugins                  ] [Living Totem] loaded [], sites []
+[2014-05-14 16:12:26,607][INFO ][node                     ] [Living Totem] initialized
+[2014-05-14 16:12:26,607][INFO ][node                     ] [Living Totem] starting ...
+[2014-05-14 16:12:26,764][INFO ][transport                ] [Living Totem] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-14 16:12:29,916][INFO ][cluster.service          ] [Living Totem] new_master [Living Totem][j7p-MIosSB2L2LOSB9gO_Q][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-14 16:12:29,931][INFO ][discovery                ] [Living Totem] elasticsearch/j7p-MIosSB2L2LOSB9gO_Q
+[2014-05-14 16:12:30,013][INFO ][http                     ] [Living Totem] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/169.254.43.2:9200]}
+[2014-05-14 16:12:30,013][INFO ][node                     ] [Living Totem] started
+[2014-05-14 16:12:30,373][INFO ][gateway                  ] [Living Totem] recovered [4] indices into cluster_state
+[2014-05-14 20:11:26,634][INFO ][node                     ] [Elektra] version[0.90.10], pid[1464], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-05-14 20:11:26,634][INFO ][node                     ] [Elektra] initializing ...
+[2014-05-14 20:11:26,634][INFO ][plugins                  ] [Elektra] loaded [], sites []
+[2014-05-14 20:11:29,426][INFO ][node                     ] [Elektra] initialized
+[2014-05-14 20:11:29,426][INFO ][node                     ] [Elektra] starting ...
+[2014-05-14 20:11:29,645][INFO ][transport                ] [Elektra] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.248.1:9300]}
+[2014-05-14 20:11:32,885][INFO ][cluster.service          ] [Elektra] new_master [Elektra][EmSvIeGzSbulOgjvFYIwUQ][inet[/192.168.248.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-05-14 20:11:32,916][INFO ][discovery                ] [Elektra] elasticsearch/EmSvIeGzSbulOgjvFYIwUQ
+[2014-05-14 20:11:33,159][INFO ][http                     ] [Elektra] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.248.1:9200]}
+[2014-05-14 20:11:33,175][INFO ][node                     ] [Elektra] started
+[2014-05-14 20:11:33,660][INFO ][gateway                  ] [Elektra] recovered [4] indices into cluster_state
+[2014-05-14 23:26:56,162][INFO ][node                     ] [Elektra] stopping ...
+[2014-05-14 23:26:56,287][INFO ][node                     ] [Elektra] stopped
+[2014-05-14 23:26:56,287][INFO ][node                     ] [Elektra] closing ...
+[2014-05-14 23:26:56,287][INFO ][node                     ] [Elektra] closed

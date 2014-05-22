@@ -1,0 +1,26 @@
+[2014-02-26 21:11:30,617][INFO ][node                     ] [Night Rider] version[0.90.10], pid[4792], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-02-26 21:11:30,633][INFO ][node                     ] [Night Rider] initializing ...
+[2014-02-26 21:11:30,648][INFO ][plugins                  ] [Night Rider] loaded [], sites []
+[2014-02-26 21:11:33,039][INFO ][node                     ] [Night Rider] initialized
+[2014-02-26 21:11:33,039][INFO ][node                     ] [Night Rider] starting ...
+[2014-02-26 21:11:33,211][INFO ][transport                ] [Night Rider] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-02-26 21:11:36,446][INFO ][cluster.service          ] [Night Rider] new_master [Night Rider][_MOSicd2QU-X5TY6ZQOECw][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-02-26 21:11:36,508][INFO ][discovery                ] [Night Rider] elasticsearch/_MOSicd2QU-X5TY6ZQOECw
+[2014-02-26 21:11:36,649][INFO ][http                     ] [Night Rider] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-02-26 21:11:36,649][INFO ][node                     ] [Night Rider] started
+[2014-02-26 21:11:37,102][INFO ][gateway                  ] [Night Rider] recovered [4] indices into cluster_state
+[2014-02-26 21:13:12,938][INFO ][node                     ] [Squidboy] version[0.90.10], pid[6628], build[0a5781f/2014-01-10T10:18:37Z]
+[2014-02-26 21:13:12,938][INFO ][node                     ] [Squidboy] initializing ...
+[2014-02-26 21:13:12,938][INFO ][plugins                  ] [Squidboy] loaded [], sites []
+[2014-02-26 21:13:14,876][INFO ][node                     ] [Squidboy] initialized
+[2014-02-26 21:13:14,876][INFO ][node                     ] [Squidboy] starting ...
+[2014-02-26 21:13:15,047][INFO ][transport                ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.5:9300]}
+[2014-02-26 21:13:18,298][INFO ][cluster.service          ] [Squidboy] new_master [Squidboy][qJ0GwgGdSAqBTUp3fHl7nQ][inet[/192.168.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-02-26 21:13:18,360][INFO ][discovery                ] [Squidboy] elasticsearch/qJ0GwgGdSAqBTUp3fHl7nQ
+[2014-02-26 21:13:18,516][INFO ][http                     ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.5:9200]}
+[2014-02-26 21:13:18,516][INFO ][node                     ] [Squidboy] started
+[2014-02-26 21:13:18,876][INFO ][gateway                  ] [Squidboy] recovered [4] indices into cluster_state
+[2014-02-26 21:36:09,464][INFO ][cluster.metadata         ] [Squidboy] [animals] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-02-26 21:36:09,642][INFO ][cluster.metadata         ] [Squidboy] [animals] update_mapping [animals] (dynamic)
+[2014-02-26 22:21:46,456][INFO ][cluster.metadata         ] [Squidboy] [animals] update_mapping [dog] (dynamic)
+[2014-02-26 22:38:40,105][INFO ][cluster.metadata         ] [Squidboy] [animals] update_mapping [cat] (dynamic)
