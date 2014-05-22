@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Runtime.Serialization;
 using System.Web.Http;
 
 using Model;
 
 using WebAPIwithODATA.Models;
 
-namespace WebAPIwithODATA.Controllers
+namespace ConsoleWebAPIwithODATA.Controllers
 {
 	public class ValuesController : ApiController
 	{
@@ -50,8 +45,8 @@ namespace WebAPIwithODATA.Controllers
 		{
 			var house = new House();
 			var house1 = new House();
-			var glaus = new Animal { Name = "Glaus", Age = id };
-			var tiger = new Animal { Name = "Tiger", Age = id };
+			var glaus = new Animal { Name = "Glaus", Age = id, Size = a };
+			var tiger = new Animal { Name = "Tiger", Age = id, Size = a };
 			house.Animals = new List<Animal> { glaus, glaus };
 			house1.Animals = new List<Animal> { tiger, tiger };
 			var houses = new List<House> { house, house1 };
