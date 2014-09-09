@@ -8,6 +8,7 @@ using WebAPIwithODATA.Models;
 
 namespace ConsoleWebAPIwithODATA.Controllers
 {
+	[RoutePrefix("api")]
 	public class ValuesController : ApiController
 	{
 		// GET api/values
