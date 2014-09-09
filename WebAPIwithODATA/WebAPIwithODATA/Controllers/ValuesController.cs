@@ -13,7 +13,6 @@ using WebAPIwithODATA.Models;
 
 namespace WebAPIwithODATA.Controllers
 {
-	[RoutePrefix("TestControllerRoute")]
 	public class ValuesController : ApiController
 	{
 		// GET api/values
